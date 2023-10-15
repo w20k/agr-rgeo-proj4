@@ -49,7 +49,7 @@ module RGeo
           if opts_.include?(:dir)
             dir_ = opts_[:dir]
           else
-            ["/usr/local/share/proj", "/usr/local/proj/share/proj", "/usr/local/proj4/share/proj", "/opt/local/share/proj", "/opt/proj/share/proj", "/opt/proj4/share/proj", "/opt/share/proj", "/usr/share/proj"].each do |d_|
+            ["/usr/local/share/proj", "/usr/local/proj/share/proj", "/usr/local/proj4/share/proj", "/opt/local/share/proj", "/opt/proj/share/proj", "/opt/proj4/share/proj", "/opt/share/proj", "/usr/share/proj", "/opt/homebrew/share/proj"].each do |d_|
               if ::File.directory?(d_) && ::File.readable?(d_)
                 dir_ = d_
                 break
