@@ -648,7 +648,7 @@ void Init_proj4_c_impl() {
   local_proj_context = proj_context_create();
   rgeo_init_proj4();
   rgeo_init_proj_errors();
-  proj_context_use_proj4_init_rules(local_proj_context, 1);
+//  proj_context_use_proj4_init_rules(local_proj_context, 1);
 #endif
 }
 
